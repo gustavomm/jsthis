@@ -49,12 +49,12 @@ f2() === undefined; // true`];
     
       ngOnInit() {
         var typed = new Typed('.typed', {
-            strings: ['jsThis', 'the different values', 'that "this" can have', 'in JavaScript', 'made by Gustavo'],
-            typeSpeed: 100,
+            strings: ['jsThis', 'the different values', 'that "this" can have', 'in JavaScript', 'made by Gustavo', 'jsThis'],
+            typeSpeed: 50,
             backSpeed: 30,
             backDelay: 1000,
             smartBackspace: false,
-            loop: true,
+            loop: false,
             autoInsertCss: true
           });
     }
