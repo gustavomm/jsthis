@@ -1,12 +1,11 @@
 
 .title {
-    font-size: calc(18px + 3vh);
     font-family: vmBoldObl;
     color: #eee;
 }
 
 .header {
-    font-size: calc(18px + 3vh);
+    font-size: calc(20px + 3vw);
     font-family: vmBoldObl;
     background: #FF4E50;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
@@ -43,16 +42,18 @@
 }
 
 .header.sn-scrolling-down {
-    transform: translateY(calc((2rem + 18px + 3vh) * -1));
+    font-size: 20px !important;
+    padding: 0.5rem 1rem;
 }
    
 .header.sn-scrolling-up {
-    transform: translateY(0);
+    font-size: calc(20px + 3vw);
+    padding: 1rem;
 }
 
 .body {
-    margin-top: calc(2rem + 18px + 3vh);
-    padding: 1rem;
+    margin-top: calc(2rem + 3vw);
+    padding: 2rem 1rem;
 }
 
 .code-font {

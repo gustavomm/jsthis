@@ -9,10 +9,10 @@ import Typed from 'typed.js';
 export class AppComponent {
     response: HighlightResult;
 
-    code = `    function myFunction() {
-        document.getElementById("demo1").innerHTML = "Hello there!";
-        document.getElementById("demo2").innerHTML = "How are you?";
-    }`
+    code = `function myFunction() {
+    document.getElementById("demo1").innerHTML = "Hello there!";
+    document.getElementById("demo2").innerHTML = "How are you?";
+}`
     typed = {};
 
     onHighlight(e) {
@@ -27,10 +27,10 @@ export class AppComponent {
     
       ngOnInit() {
         var typed = new Typed('.typed', {
-            strings: ['jsThis', 'jsThis', 'jsThis', 'made by Gustavo'],
+            strings: ['jsThis', 'the different values', 'that "this" can have', 'in JavaScript', 'made by Gustavo'],
             typeSpeed: 100,
             backSpeed: 30,
-            backDelay: 4000,
+            backDelay: 1000,
             smartBackspace: false,
             loop: true,
             autoInsertCss: true
