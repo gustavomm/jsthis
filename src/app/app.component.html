@@ -3,11 +3,13 @@
     <span class="title typed-cursor"></span>
 </div>
 <div class="body">
-    <pre>
-        <code class="code-font" [highlight]="code" (highlighted)="onHighlight($event)">
-        </code>
-    </pre>
-
-    <h4>Highlight response</h4>
-<pre>{{ response | json }}</pre>
+    <div *ngFor="let code of codes">
+        <p>
+            A function's this keyword behaves a little differently in JavaScript compared to other languages. It also has some differences between strict mode and non-strict mode.
+        </p>
+        <pre>
+            <code class="code-font" [highlight]="code">
+            </code>
+        </pre>
+    </div>
 </div>

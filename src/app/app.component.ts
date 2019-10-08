@@ -7,23 +7,45 @@ import Typed from 'typed.js';
     styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-    response: HighlightResult;
 
-    code = `function myFunction() {
-    document.getElementById("demo1").innerHTML = "Hello there!";
-    document.getElementById("demo2").innerHTML = "How are you?";
-}`
+    codes = [
+`var test = {
+    prop: 42,
+    func: function() {
+        return this.prop;
+    },
+};
+      
+console.log(test.func());
+// expected output: 42`,
+
+`// In web browsers, the window object is also the global object:
+console.log(this === window); // true
+    
+a = 37;
+console.log(window.a); // 37
+    
+this.b = "MDN";
+console.log(window.b)  // "MDN"
+console.log(b)         // "MDN"`,
+    
+`function f1() {
+    return this;
+}
+      
+// In a browser:
+f1() === window; // true 
+      
+// In Node:
+f1() === global; // true`,
+    
+`function f2() {
+    'use strict'; // see strict mode
+    return this;
+}
+      
+f2() === undefined; // true`];
     typed = {};
-
-    onHighlight(e) {
-        this.response = {
-            language: e.language,
-            r: e.r,
-            second_best: '{...}',
-            top: '{...}',
-            value: '{...}'
-        }
-      }
     
       ngOnInit() {
         var typed = new Typed('.typed', {
