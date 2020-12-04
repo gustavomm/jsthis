@@ -21,7 +21,7 @@
     "@angular/router": "~8.2.9",
     "@thisissoon/angular-inviewport": "^4.2.0",
     "@thisissoon/angular-scroll-collapse": "^4.1.0",
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.4.1",
     "ngx-highlightjs": "^3.0.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
